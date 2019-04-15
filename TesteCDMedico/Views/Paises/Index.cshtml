@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TesteCDMedico.PAISES>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Adicionar Novo", "Adicionar")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sigla)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sigla)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id=item.IDPais }) |
+                @Html.ActionLink("Details", "Details", new { id=item.IDPais }) |
+                @Html.ActionLink("Excluir", "Excluir", new { id=item.IDPais })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

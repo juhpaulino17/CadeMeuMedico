@@ -1,0 +1,34 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("../imagens/Image.JPEG");
+    background-size: 35% 70%;
+    background-attachment: fixed;
+    left: 0pt;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+img{
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+
+
